@@ -46,6 +46,15 @@
   else if (average >= 60) grade = "B";
   else if (average >= 50) grade = "C";
   else grade = "F";
+  let resultStatus = (average >= 40) ? "Pass" : "Fail";
+
+  document.getElementById("result").innerHTML = `
+    Total: ${total} <br>
+    Average: ${average.toFixed(2)} <br>
+    Grade: ${grade} <br>
+    Result: ${resultStatus}
+  `;
+}
  </script>
 </body>
 </html>
