@@ -27,6 +27,15 @@
     alert("Enter valid number");
     return;
   } 
+   let total = 0;
+
+  for (let i = 1; i <= count; i++) {
+    let marks = prompt("Enter marks for subject " + i);
+
+    if (marks === null || marks === "" || isNaN(marks)) {
+      alert("Invalid input");
+      return;
+    }
  </script>
 </body>
 </html>
