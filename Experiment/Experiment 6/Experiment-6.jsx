@@ -22,3 +22,7 @@ function changeParagraph() {
     document.getElementById("para").innerText =
     "The paragraph text has been changed using JavaScript!";
 }
+function changeFont() {
+
+    document.getElementById("para").style.fontSize = "20px";
+}
