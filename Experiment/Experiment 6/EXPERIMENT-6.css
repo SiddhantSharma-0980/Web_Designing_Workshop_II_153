@@ -22,3 +22,11 @@ input{
 .buttons{
  margin-bottom:10px;
 }
+button{
+ margin:5px;
+ padding: 8px 10px;
+ background-color:beige;
+ color: black;
+ border-radius:5px;
+ cursor:pointer;
+}
