@@ -69,3 +69,11 @@ function totalSalary() {
     document.querySelector(".result").innerHTML =
     "<h3>Total Salary Payout: ₹" + total + "</h3>";
 }
+
+function averageSalary() {
+
+    if (employees.length === 0) {
+        document.querySelector(".result").innerHTML =
+        "<h3>No employee records available</h3>";
+        return;
+    }
