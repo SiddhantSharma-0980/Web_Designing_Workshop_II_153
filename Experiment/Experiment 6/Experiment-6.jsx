@@ -17,3 +17,8 @@ function changeHeading(){
     }
     
 }
+function changeParagraph() {
+
+    document.getElementById("para").innerText =
+    "The paragraph text has been changed using JavaScript!";
+}
