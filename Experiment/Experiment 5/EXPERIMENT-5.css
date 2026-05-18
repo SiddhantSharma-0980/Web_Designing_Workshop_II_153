@@ -33,3 +33,6 @@ width: 250px;
 border-radius: 10px;
 margin-left: 10px;
 }
+.button:hover{
+background-color:rgb(227, 233, 229) ;
+} 
