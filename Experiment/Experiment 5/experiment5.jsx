@@ -6,7 +6,7 @@ function addEmployee() {
     let id = document.getElementById("id").value;
     let salary = parseFloat(document.getElementById("salary").value);
     let department = document.getElementById("department").value;
- 
+
     if (name === "" || id === "" || isNaN(salary) || department === "") {
         alert("Please fill all fields properly");
         return;
@@ -18,13 +18,15 @@ function addEmployee() {
         salary: salary,
         department: department
     };
-     employees.push(employee);
+
+    employees.push(employee);
     alert("Employee Added Successfully!");
     document.getElementById("name").value = "";
     document.getElementById("id").value = "";
     document.getElementById("salary").value = "";
     document.getElementById("department").value = "";
 }
+
 function displayEmployees() {
 
     let output = "<h3>All Employees</h3>";
@@ -44,6 +46,7 @@ function displayEmployees() {
 
     document.querySelector(".result").innerHTML = output;
 }
+
 function filterSalary() {
 
     let filtered = employees.filter(emp => emp.salary > 50000);
@@ -77,13 +80,22 @@ function averageSalary() {
         "<h3>No employee records available</h3>";
         return;
     }
-      let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
+
+    let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
     let avg = total / employees.length;
     document.querySelector(".result").innerHTML =
     "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>";
 }
+
 function sortByDepartment() {
 
     let sorted = [...employees].sort((a, b) =>
         a.department.localeCompare(b.department)
 );
+
+let output = "<h3>Employees Sorted by Department</h3>";
+
+
+
+document.querySelector(".result").innerHTML = output;
+}
