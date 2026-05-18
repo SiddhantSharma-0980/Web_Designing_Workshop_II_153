@@ -10,3 +10,9 @@ padding: 5px;
 margin: 5px;
 background-color:cornflowerblue;
 }
+#name{
+height: 30px;
+width: 250px;
+border-radius: 10px;
+margin-left: 50px;
+}
