@@ -14,3 +14,8 @@ body{
  text-align:center;
  width:350px;
 }
+input{
+ padding:8px;
+ width:80%;
+ margin-bottom:10px;
+}
