@@ -26,3 +26,15 @@ function changeFont() {
 
     document.getElementById("para").style.fontSize = "20px";
 }
+function resetAll() {
+
+    document.body.style.backgroundColor = "#FFFFFF";
+    document.getElementById("heading").innerText =
+    "Welcome to JavaScript Lab";
+    document.getElementById("para").innerText =
+    "This is a sample paragraph. JavaScript events can dynamically change content.";
+    document.getElementById("para")
+    .style.fontSize = "16px";
+    document.getElementById("nameInput").value = " ";
+
+}
