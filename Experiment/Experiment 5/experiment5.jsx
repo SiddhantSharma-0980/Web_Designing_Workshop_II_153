@@ -95,7 +95,13 @@ function sortByDepartment() {
 
 let output = "<h3>Employees Sorted by Department</h3>";
 
-
+sorted.forEach(emp => {
+    output += `
+    Name: ${emp.name} |
+    Department: ${emp.department} |
+    Salary: ₹${emp.salary} <br>
+    `;
+});
 
 document.querySelector(".result").innerHTML = output;
 }
