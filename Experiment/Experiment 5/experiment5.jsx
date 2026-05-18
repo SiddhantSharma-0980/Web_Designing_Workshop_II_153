@@ -62,3 +62,10 @@ function filterSalary() {
 
     document.querySelector(".result").innerHTML = output;
 }
+
+function totalSalary() {
+
+    let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
+    document.querySelector(".result").innerHTML =
+    "<h3>Total Salary Payout: ₹" + total + "</h3>";
+}
