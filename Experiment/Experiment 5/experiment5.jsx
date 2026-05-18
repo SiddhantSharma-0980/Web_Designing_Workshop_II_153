@@ -44,3 +44,21 @@ function displayEmployees() {
 
     document.querySelector(".result").innerHTML = output;
 }
+function filterSalary() {
+
+    let filtered = employees.filter(emp => emp.salary > 50000);
+    let output = "<h3>Employees with Salary > ₹50,000</h3>";
+
+    if (filtered.length === 0) {
+        output += "No employees found.";
+    }
+
+    filtered.forEach(emp => {
+        output += `
+        Name: ${emp.name} |
+        Salary: ₹${emp.salary} <br>
+        `;
+    });
+
+    document.querySelector(".result").innerHTML = output;
+}
