@@ -77,3 +77,8 @@ function averageSalary() {
         "<h3>No employee records available</h3>";
         return;
     }
+      let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
+    let avg = total / employees.length;
+    document.querySelector(".result").innerHTML =
+    "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>";
+}
