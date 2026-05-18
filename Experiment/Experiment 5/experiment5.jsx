@@ -18,3 +18,10 @@ function addEmployee() {
         salary: salary,
         department: department
     };
+     employees.push(employee);
+    alert("Employee Added Successfully!");
+    document.getElementById("name").value = "";
+    document.getElementById("id").value = "";
+    document.getElementById("salary").value = "";
+    document.getElementById("department").value = "";
+}
