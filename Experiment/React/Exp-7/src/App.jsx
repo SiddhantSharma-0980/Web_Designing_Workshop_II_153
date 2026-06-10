@@ -1,13 +1,23 @@
-import Studentcard from "./studentcard.jsx";
+import Student from "./Components/Student";
 function App() {
-  return (
-    <div>
-      <h1>Welcome Cse 27 in react</h1>
-      <p>This is my first react app!</p>
-      <Studentcard name ="John Doe" age="20" course="Computer Science" marks="85" />
-    </div>
-  );
-
+return (
+<div>
+  <h1>Student Information</h1>
+  <Student
+    name="Siddhant Saxena"
+    course="Computer Science"
+    marks="92" />
+  <Student
+    name="Aman Jha"
+    course="MBBS"
+    marks="96" />
+  <Student
+    name="Arjun Choudhary"
+    course="Mechanical"
+    marks="87" />
+  <br /><br /><br /><br />
+  <p>Siddhant Saxena<br />CSE-21</p>
+</div>
+);
 }
-
 export default App;
