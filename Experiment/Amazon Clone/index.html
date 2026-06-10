@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+      amazon
+    </div>
+
+    <div class="search-box">
+
+      <input type="text"
+             id="searchInput"
+             placeholder="Search products...">
+
+      <button onclick="searchProduct()">
+        Search
+      </button>
+
+    </div>
+
+    <div class="nav-links">
+      <div>Account</div>
+      <div>Orders</div>
+      <div onclick="toggleCart()">Cart</div>
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>Welcome to Amazon Clone Store</h1>
+      <p>Best Deals On Electronics & Fashion</p>
+    </div>
+
+  </section>
+
+  <!-- Products -->
+
+  <section class="products">
+
+    <!-- Product 1 -->
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+           alt="Smartphone">
+
+      <h3>Smartphone</h3>
+
+      <p class="price">₹49,999</p>
+
+      <button onclick="addToCart('Smartphone',49999)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <!-- Product 2 -->
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+           alt="Camera">
+
+      <h3>Camera</h3>
+
+      <p class="price">₹35,999</p>
+
+      <button onclick="addToCart('Camera',35999)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <!-- Product 3 -->
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+           alt="Headphones">
+
+      <h3>Headphones</h3>
+
+      <p class="price">₹2,999</p>
+
+      <button onclick="addToCart('Headphones',2999)">
+        Add to Cart
+      </button>
+
+    </div>
+
+    <!-- Product 4 -->
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+           alt="Shoes">
+
+      <h3>Shoes</h3>
+
+      <p class="price">₹4,499</p>
+
+      <button onclick="addToCart('Shoes',4499)">
+        Add to Cart
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Floating Cart -->
+
+  <div class="floating-cart"
+       onclick="toggleCart()">
+
+    🛒 <span id="cartCount">0</span>
+
+  </div>
+
+  <!-- Cart Sidebar -->
+
+  <div class="cart-sidebar"
+       id="cartSidebar">
+
+    <div class="cart-header">
+
+      <h2>Your Cart</h2>
+
+      <button onclick="toggleCart()">
+        ✖
+      </button>
+
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-footer">
+
+      <h3>
+        Total: ₹<span id="totalPrice">0</span>
+      </h3>
+
+      <button class="order-btn"
+              onclick="placeOrder()">
+
+        Place Order
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+
+    © 2026 Amazon Clone Website
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html> 
